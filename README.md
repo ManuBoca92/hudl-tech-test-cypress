@@ -4,7 +4,7 @@ For this project I a BDD test framework using Cypress, Typescript and Cucumber.
 
 ## Setup
 
-To run this test, follow these steps;
+To run this test, follow these steps, please make sure you have **node** and **yarn** installed on your local machine;
 
 - Clone repo
 - Go into directory and run `yarn` to install all dependcies
