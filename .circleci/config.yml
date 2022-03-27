@@ -9,11 +9,10 @@ executors:
 workflows:
   build:
     jobs:
-      - cypress/install:
-          executor: with-chrome
       - cypress/run:
           executor: with-chrome
           yarn: true
+          command: yarn test
           post-steps:
             - store_artifacts:
                 path: reports
