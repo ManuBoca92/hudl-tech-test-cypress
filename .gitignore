@@ -1,0 +1,9 @@
+node_modules
+.vscode
+videos
+reports
+report
+screenshots
+cucumber-json
+// turn off code coverage
+coverage/
