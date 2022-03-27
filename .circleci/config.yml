@@ -1,11 +1,11 @@
 version: 2.1
 orbs:
-  cypress: cypress-io/cypress@1
+  cypress: cypress-io/cypress@1.29.0
 workflows:
   build:
     jobs:
       - cypress/run:
-          executor: cypress/base-14.17.0
+          executor: cypress/base-14
           yarn: true
           post-steps:
             - store_artifacts:
