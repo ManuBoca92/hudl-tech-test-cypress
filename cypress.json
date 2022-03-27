@@ -1,0 +1,14 @@
+{
+  "baseUrl": "https://www.hudl.com",
+  "viewportWidth": 1500,
+  "viewportHeight": 1200,
+  "ignoreTestFiles": "*.ts",
+  "chromeWebSecurity": false,
+  "reporter": "cypress-mochawesome-reporter",
+  "reporterOptions": {
+    "reportDir": "cypress/report",
+    "charts": true,
+    "reportPageTitle": "Hudle Test Report",
+    "embeddedScreenshots": true
+  }
+}
