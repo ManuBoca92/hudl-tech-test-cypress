@@ -13,6 +13,6 @@ Feature: Login functionality
 
 
         Examples:
-            | email                   | password  | url   | status       |
-            | ebonom.n.mfam@gmail.com | tester123 | /home | successful   |
-            | test@example.com        | testing   | /     | unsuccessful |
+            | email                   | password          | url   | status       |
+            | ebonom.n.mfam@gmail.com | askmeforpassword  | /home | successful   |
+            | test@example.com        | testing           | /     | unsuccessful |
