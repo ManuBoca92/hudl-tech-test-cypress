@@ -24,6 +24,9 @@ I used a cucumber html reporter for this project.
 
 Test reports can be found in `\reports\cucumber-htmlreport.html\index.html` when you run the tests locally.
 
+![Test report 1](https://github.com/ManuBoca92/hudl-tech-test-cypress/blob/main/images/Screenshot.png)
+![Test report 2](https://github.com/ManuBoca92/hudl-tech-test-cypress/blob/main/images/second.png)
+
 ## Linting
 
 Eslint is used for linting. To run **eslint** use `yarn lint` command
