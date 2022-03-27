@@ -1,11 +1,18 @@
 version: 2.1
 orbs:
   cypress: cypress-io/cypress@1.29.0
+executors:
+  with-chrome:
+    resource_class: small
+    docker:
+      - image: 'cypress/browsers:node16.13.0-chrome95-ff94'
 workflows:
   build:
     jobs:
+      - cypress/install:
+          executor: with-chrome
       - cypress/run:
-          executor: cypress/base-14
+          executor: with-chrome
           yarn: true
           post-steps:
             - store_artifacts:
