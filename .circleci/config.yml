@@ -1,14 +1,24 @@
-version: 2.1
+version: '2.1'
 orbs:
-  cypress: cypress-io/cypress@1.29.0
+  node: circleci/node@x.y
+jobs:
+  test:
+    executor:
+      name: node/default
+      tag: '16'
+    steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: yarn
+      - run:
+          name: Run tests
+          command: yarn test
+      - store_artifacts:
+          path: /reports
+      - store_test_results:
+          path: reports
 
 workflows:
-  build:
+  test_my_app:
     jobs:
-      - cypress/run:
-          executor: cypress/base-14
-          yarn: true
-          store_artifacts: true
-          post-steps:
-            - store_test_results:
-                path: reports
+      - test
