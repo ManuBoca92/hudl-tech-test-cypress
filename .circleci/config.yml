@@ -5,7 +5,7 @@ workflows:
   build:
     jobs:
       - cypress/run:
-          executor: cypress/base-14
+          executor: cypress/base-14.17.0
           yarn: true
           post-steps:
             - store_artifacts:
