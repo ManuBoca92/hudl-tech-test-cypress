@@ -11,6 +11,11 @@ jobs:
       - node/install-packages:
           pkg-manager: yarn
       - run:
+          name: Setup xvfb
+          command: |
+            Xvfb :99 &
+            export DISPLAY=:99
+      - run:
           name: Run tests
           command: yarn test
       - store_artifacts:
