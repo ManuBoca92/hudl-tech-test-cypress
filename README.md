@@ -18,14 +18,6 @@ I only covered just 2 test cases, as this project is more about showing the BDD 
 - Login with valid credentials
 - Login with invalid credentials
 
-## Test report
-
-I used a cucumber html reporter for this project.
-
-Test reports can be found in `\reports\cucumber-htmlreport.html\index.html` when you run the tests locally.
-
-![Test report 1](https://github.com/ManuBoca92/hudl-tech-test-cypress/blob/main/images/Screenshot.png)
-![Test report 2](https://github.com/ManuBoca92/hudl-tech-test-cypress/blob/main/images/second.png)
 
 ## Linting
 
@@ -40,7 +32,17 @@ Prettier is used to format the code automatically on save. To run **prettier** m
 ## CI/CD
 
 I used **CircleCI** as the CI/CD tool.
+https://app.circleci.com/pipelines/github/ManuBoca92/hudl-tech-test-cypress?filter=all
 
 ### Artifacts
 
 Test reports can be found in the artifcats tab.
+
+## Test report
+
+I used a cucumber html reporter for this project.
+
+Test reports can be found in `\reports\cucumber-htmlreport.html\index.html` when you run the tests locally.
+
+![Test report 1](https://github.com/ManuBoca92/hudl-tech-test-cypress/blob/main/images/Screenshot.png)
+![Test report 2](https://github.com/ManuBoca92/hudl-tech-test-cypress/blob/main/images/second.png)
